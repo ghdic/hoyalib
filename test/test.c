@@ -1,7 +1,12 @@
-#include <Windows.h>
+#include <stdio.h>
 
 
 
-int main() {
-	setcursortype(SOLIDCURSOR);
+void main(void)
+
+{
+
+	int a;
+	printf("%d\n", scanf_s("%d", &a));
+
 }
