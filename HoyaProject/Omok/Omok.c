@@ -11,7 +11,6 @@ int CheckWin(int board[][15], int lrow, int lcol);
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance
 	, LPSTR lpszCmdParam, int nCmdShow)
 {
-
 	static TCHAR szAppName[] = TEXT("OMOK");
 
 	HWND         hwnd;
@@ -49,7 +48,6 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance
 	ShowWindow(hwnd, nCmdShow);
 	UpdateWindow(hwnd);
 
-
 	//5. process messages
 	while (GetMessage(&msg, 0, 0, 0))
 	{
@@ -59,11 +57,10 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance
 	return msg.wParam;
 }
 
-
 /*----------- Window Procedure -------------*/
 LRESULT   CALLBACK WndProc(HWND hwnd, UINT iMessage, WPARAM wParam, LPARAM lParam)
 {
-	//Double-buffering 
+	//Double-buffering
 	HBITMAP hBitmap, hOldBitmap;
 	HDC hdc, hdcMem;
 
@@ -75,7 +72,6 @@ LRESULT   CALLBACK WndProc(HWND hwnd, UINT iMessage, WPARAM wParam, LPARAM lPara
 
 	static int board[15][15] = { 0, };         //Game board
 	static int winStone;
-
 
 	int x, y;
 	int row, col;
@@ -105,7 +101,6 @@ LRESULT   CALLBACK WndProc(HWND hwnd, UINT iMessage, WPARAM wParam, LPARAM lPara
 
 		return 0;
 
-
 	case WM_LBUTTONDOWN:
 		if (!isWin)
 		{
@@ -129,9 +124,7 @@ LRESULT   CALLBACK WndProc(HWND hwnd, UINT iMessage, WPARAM wParam, LPARAM lPara
 					MessageBox(hwnd, temp, "½Â¸®", MB_OK | MB_ICONINFORMATION);
 					return NULL;
 				}
-
 			}
-
 		}
 
 		return 0;
@@ -141,7 +134,7 @@ LRESULT   CALLBACK WndProc(HWND hwnd, UINT iMessage, WPARAM wParam, LPARAM lPara
 		hdcMem = CreateCompatibleDC(hdc);                     //Memory DC
 		hBitmap = CreateCompatibleBitmap(hdc, ST_SIZE * 15, ST_SIZE * 15);   //Memory BITMAP
 
-		hBrush = (HBRUSH)CreateSolidBrush(RGB(255, 255, 0));        //Yellow Brush (for Board)   
+		hBrush = (HBRUSH)CreateSolidBrush(RGB(255, 255, 0));        //Yellow Brush (for Board)
 
 		hOldBitmap = (HBITMAP)SelectObject(hdcMem, hBitmap);      //in Memory DC, hBitmap selected (ÇÊ¼ö)
 		hOldBrush = (HBRUSH)SelectObject(hdcMem, hBrush);         //in Memory DC, Yellow Bursh selected.
@@ -149,12 +142,12 @@ LRESULT   CALLBACK WndProc(HWND hwnd, UINT iMessage, WPARAM wParam, LPARAM lPara
 		Rectangle(hdcMem, 0, 0, ST_SIZE * 15, ST_SIZE * 15);         //Draw Board
 
 																	 //to seperate drawing board lines.
-		for (x = 0; x<16; x++)
+		for (x = 0; x < 16; x++)
 		{
 			MoveToEx(hdcMem, x*ST_SIZE + 20, 0, NULL);
 			LineTo(hdcMem, x*ST_SIZE + 20, ST_SIZE * 15 + 20);
 		}
-		for (y = 0; y<15; y++)
+		for (y = 0; y < 15; y++)
 		{
 			MoveToEx(hdcMem, 0, y*ST_SIZE + 20, NULL);
 			LineTo(hdcMem, ST_SIZE * 15 + 20, y*ST_SIZE + 20);
@@ -162,9 +155,9 @@ LRESULT   CALLBACK WndProc(HWND hwnd, UINT iMessage, WPARAM wParam, LPARAM lPara
 		DeleteObject(SelectObject(hdcMem, hOldBrush));
 
 		//To draw stones in [board] array
-		for (row = 0; row<15; row++)
+		for (row = 0; row < 15; row++)
 		{
-			for (col = 0; col<15; col++)
+			for (col = 0; col < 15; col++)
 			{
 				if (board[row][col] == PLAYER)
 					hBrush = (HBRUSH)CreateSolidBrush(RGB(50, 50, 255));
@@ -178,7 +171,6 @@ LRESULT   CALLBACK WndProc(HWND hwnd, UINT iMessage, WPARAM wParam, LPARAM lPara
 					Ellipse(hdcMem, col*ST_SIZE, row*ST_SIZE
 						, col*ST_SIZE + ST_SIZE, row*ST_SIZE + ST_SIZE);
 					DeleteObject(SelectObject(hdcMem, hOldBrush));
-
 				}
 			}
 		}
@@ -200,24 +192,20 @@ LRESULT   CALLBACK WndProc(HWND hwnd, UINT iMessage, WPARAM wParam, LPARAM lPara
 			DeleteObject(SelectObject(hdcMem, hOldBrush));
 		}
 
-
 		//Fast copy what Memory DC to Device Context
 		BitBlt(hdc, 0, 0, ST_SIZE * 15, ST_SIZE * 15, hdcMem, 0, 0, SRCCOPY);
 
-		//Collection 
+		//Collection
 		DeleteObject(SelectObject(hdcMem, hOldBitmap));
-
 
 		//WriteArray values
 		char temp[50];
-		for (row = 0; row<15; row++)
-			for (col = 0; col<15; col++)
+		for (row = 0; row < 15; row++)
+			for (col = 0; col < 15; col++)
 			{
 				wsprintf(temp, "%d", board[row][col]);
 				TextOut(hdc, 650 + col * 10, 40 + row * 20, temp, 1);
 			}
-
-
 
 		ReleaseDC(hwnd, hdcMem);
 		DeleteDC(hdcMem);
@@ -227,10 +215,8 @@ LRESULT   CALLBACK WndProc(HWND hwnd, UINT iMessage, WPARAM wParam, LPARAM lPara
 	case WM_DESTROY:
 		PostQuitMessage(0);
 		return 0;
-
 	}
 	return DefWindowProc(hwnd, iMessage, wParam, lParam);
-
 }
 
 /*-------------- Check Win --------------------*/
@@ -240,17 +226,17 @@ int CheckWin(int board[][15], int lrow, int lcol)
 	int i;
 	int count = 0;
 
-	for (row = 0; row<lrow; row++)
+	for (row = 0; row < lrow; row++)
 	{
-		for (col = 0; col<lcol; col++)
+		for (col = 0; col < lcol; col++)
 		{
 			//If putting stone, then check.
 			if (board[row][col] == PLAYER || board[row][col] == COMPUTER)
 			{
 				// check east ¡æ
 				if (!isWin)
-					for (i = 0; i<5; i++)
-						if (row + i<lrow && (board[row + i][col] == board[row][col]))
+					for (i = 0; i < 5; i++)
+						if (row + i < lrow && (board[row + i][col] == board[row][col]))
 							count++;
 						else
 						{
@@ -262,8 +248,8 @@ int CheckWin(int board[][15], int lrow, int lcol)
 
 				// check south-east¢Ù
 				if (!isWin)
-					for (i = 0; i<5; i++)
-						if ((row + i<lrow && col + i<lcol) && (board[row + i][col + i] == board[row][col]))
+					for (i = 0; i < 5; i++)
+						if ((row + i < lrow && col + i < lcol) && (board[row + i][col + i] == board[row][col]))
 							count++;
 						else
 						{
@@ -275,8 +261,8 @@ int CheckWin(int board[][15], int lrow, int lcol)
 
 				// check south ¡é
 				if (!isWin)
-					for (i = 0; i<5; i++)
-						if (col + i<lcol && (board[row][col + i] == board[row][col]))
+					for (i = 0; i < 5; i++)
+						if (col + i < lcol && (board[row][col + i] == board[row][col]))
 							count++;
 						else
 						{
@@ -288,8 +274,8 @@ int CheckWin(int board[][15], int lrow, int lcol)
 
 				// check south-west ¢×
 				if (!isWin)
-					for (i = 0; i<5; i++)
-						if ((row - i>0 && col + i<lcol) && (board[row - i][col + i] == board[row][col]))
+					for (i = 0; i < 5; i++)
+						if ((row - i > 0 && col + i < lcol) && (board[row - i][col + i] == board[row][col]))
 							count++;
 						else
 						{
@@ -303,7 +289,6 @@ int CheckWin(int board[][15], int lrow, int lcol)
 			//If selected stone is won, then the result return.
 			if (isWin)
 				return board[row][col];
-
 		}
 	}
 
