@@ -27,5 +27,8 @@
     <ClCompile Include="Recursive Bubble Sort.c">
       <Filter>소스 파일\Sorting</Filter>
     </ClCompile>
+    <ClCompile Include="Insertion Sort.c">
+      <Filter>소스 파일\Sorting</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
