@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-
+//한글 안써져 ㅜ
 
 void main(void)
 
