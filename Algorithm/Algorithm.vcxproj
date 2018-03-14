@@ -19,11 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Insertion Sort.c" />
-    <ClCompile Include="Merge Sort.c" />
-    <ClCompile Include="Recursive Bubble Sort.c" />
-    <ClCompile Include="Recursive Insertion sort.c" />
     <ClCompile Include="Sorting\Bubble Sort.c" />
+    <ClCompile Include="Sorting\Insertion Sort.c" />
+    <ClCompile Include="Sorting\Iteravtive Quick Sort.c" />
+    <ClCompile Include="Sorting\Merge Sort.c" />
+    <ClCompile Include="Sorting\Quick Sort.c" />
+    <ClCompile Include="Sorting\Recursive Bubble Sort.c" />
+    <ClCompile Include="Sorting\Recursive Insertion sort.c" />
     <ClCompile Include="Sorting\Selection Sort.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
