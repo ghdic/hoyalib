@@ -30,5 +30,8 @@
     <ClCompile Include="Insertion Sort.c">
       <Filter>소스 파일\Sorting</Filter>
     </ClCompile>
+    <ClCompile Include="Recursive Insertion sort.c">
+      <Filter>소스 파일\Sorting</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
