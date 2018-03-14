@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Insertion Sort.c" />
+    <ClCompile Include="Merge Sort.c" />
     <ClCompile Include="Recursive Bubble Sort.c" />
     <ClCompile Include="Recursive Insertion sort.c" />
     <ClCompile Include="Sorting\Bubble Sort.c" />
