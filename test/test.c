@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-//한글 안써져 ㅜ
+//한글 안써져 ㅜㅋㅋ
 
 void main(void)
 
