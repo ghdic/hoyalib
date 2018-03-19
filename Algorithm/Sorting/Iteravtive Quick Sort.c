@@ -3,7 +3,7 @@
 //	반복 퀵 정렬
 ////////////////////////////////
 
-//주석
+/*
 #include <stdio.h>
 #define arSIZE 8
 
@@ -64,3 +64,4 @@ int main(){
 	printArr(arr, n);
 	return 0;
 }
+*/
