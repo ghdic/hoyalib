@@ -45,5 +45,8 @@
     <ClCompile Include="Sorting\Heap Sort.c">
       <Filter>소스 파일\Sorting</Filter>
     </ClCompile>
+    <ClCompile Include="Sorting\Counting Sort.c">
+      <Filter>소스 파일\Sorting</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
