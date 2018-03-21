@@ -26,6 +26,7 @@
     <ClCompile Include="Sorting\Iteravtive Quick Sort.c" />
     <ClCompile Include="Sorting\Merge Sort.c" />
     <ClCompile Include="Sorting\Quick Sort.c" />
+    <ClCompile Include="Sorting\Radix Sort.cpp" />
     <ClCompile Include="Sorting\Recursive Bubble Sort.c" />
     <ClCompile Include="Sorting\Recursive Insertion sort.c" />
     <ClCompile Include="Sorting\Selection Sort.c" />
