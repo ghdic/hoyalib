@@ -51,5 +51,8 @@
     <ClCompile Include="Sorting\Radix Sort.cpp">
       <Filter>소스 파일\Sorting</Filter>
     </ClCompile>
+    <ClCompile Include="Sorting\Bucket Sort.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

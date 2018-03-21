@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sorting\Bubble Sort.c" />
+    <ClCompile Include="Sorting\Bucket Sort.cpp" />
     <ClCompile Include="Sorting\Counting Sort.c" />
     <ClCompile Include="Sorting\Heap Sort.c" />
     <ClCompile Include="Sorting\Insertion Sort.c" />
