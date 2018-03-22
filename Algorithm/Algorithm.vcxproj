@@ -31,6 +31,7 @@
     <ClCompile Include="Sorting\Recursive Bubble Sort.c" />
     <ClCompile Include="Sorting\Recursive Insertion sort.c" />
     <ClCompile Include="Sorting\Selection Sort.c" />
+    <ClCompile Include="Sorting\Shell Sort.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

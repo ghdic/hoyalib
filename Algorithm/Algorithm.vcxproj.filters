@@ -52,7 +52,10 @@
       <Filter>소스 파일\Sorting</Filter>
     </ClCompile>
     <ClCompile Include="Sorting\Bucket Sort.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Sorting</Filter>
+    </ClCompile>
+    <ClCompile Include="Sorting\Shell Sort.cpp">
+      <Filter>소스 파일\Sorting</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
