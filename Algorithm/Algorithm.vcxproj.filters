@@ -57,5 +57,8 @@
     <ClCompile Include="Sorting\Shell Sort.cpp">
       <Filter>소스 파일\Sorting</Filter>
     </ClCompile>
+    <ClCompile Include="Sorting\Tim Sort.cpp">
+      <Filter>소스 파일\Sorting</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

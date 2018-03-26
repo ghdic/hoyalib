@@ -32,6 +32,7 @@
     <ClCompile Include="Sorting\Recursive Insertion sort.c" />
     <ClCompile Include="Sorting\Selection Sort.c" />
     <ClCompile Include="Sorting\Shell Sort.cpp" />
+    <ClCompile Include="Sorting\Tim Sort.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
