@@ -2,7 +2,7 @@
 //	Comb Sort
 //	ºøÁú Á¤·Ä
 ////////////////////////////////
-
+/*
 #include <iostream>
 #include <functional>
 using namespace std;
@@ -44,3 +44,4 @@ int main()
 	cout << endl;
 	return 0;
 }
+*/
