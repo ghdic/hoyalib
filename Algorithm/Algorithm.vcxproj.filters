@@ -66,5 +66,14 @@
     <ClCompile Include="Sorting\Pigeonhole Sort.cpp">
       <Filter>소스 파일\Sorting</Filter>
     </ClCompile>
+    <ClCompile Include="Sorting\Cycle Sort.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Sorting\Cocktail Sort.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Sorting\Strand Sort.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
