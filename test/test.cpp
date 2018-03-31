@@ -1,39 +1,63 @@
 #include "Turboc.h"
 
-class Position
+class Date;
+
+class Time
 
 {
+
+	friend void OutToday(Date &, Time &);
+
 private:
 
-	int x;
-
-	int y;
-
-	char ch;
+	int hour, min, sec;
 
 public:
 
-	Position(int x) {
-		x = 0;
+	Time(int h, int m, int s) { hour = h; min = m; sec = s; }
 
-		y = 0;
-
-		ch = ' ';
-	}
-
-	void OutPosition() {
-		if (ch != ' ') {
-			gotoxy(x, y);
-
-			_putch(ch);
-		}
-	}
 };
+
+
+
+class Date
+
+{
+
+	friend void OutToday(Date &, Time &);
+
+private:
+
+	int year, month, day;
+
+public:
+
+	Date(int y, int m, int d) { year = y; month = m; day = d; }
+
+};
+
+
+
+void OutToday(Date &d, Time &t)
+
+{
+
+	printf("오늘은 %d년 %d월 %d일이며 지금 시간은 %d:%d:%d입니다.\n",
+
+		d.year, d.month, d.day, t.hour, t.min, t.sec);
+
+}
+
+
 
 void main()
 
 {
-	Position Here(1);
 
-	Here.OutPosition();
+	Date D(2005, 01, 02);
+
+	Time T(12, 34, 56);
+
+	OutToday(D, T);
+
 }
