@@ -16,6 +16,9 @@
     <Filter Include="소스 파일\Sorting">
       <UniqueIdentifier>{0d0cf4fe-fd22-4e9c-a6a8-ccf79a41b19c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Searching">
+      <UniqueIdentifier>{fdd6b4b3-659a-4bb5-a5ea-10e1ef1325b1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sorting\Selection Sort.c">
@@ -96,11 +99,17 @@
     <ClCompile Include="Sorting\Stooge Sort.cpp">
       <Filter>소스 파일\Sorting</Filter>
     </ClCompile>
+    <ClCompile Include="Tree Sort.cpp">
+      <Filter>소스 파일\Sorting</Filter>
+    </ClCompile>
     <ClCompile Include="Tag Sort.cpp">
+      <Filter>소스 파일\Sorting</Filter>
+    </ClCompile>
+    <ClCompile Include="Cartesian Tree Sorting.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Tree Sort.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="Searching\Linear Search.cpp">
+      <Filter>소스 파일\Searching</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
