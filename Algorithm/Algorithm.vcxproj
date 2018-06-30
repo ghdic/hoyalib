@@ -19,8 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Cartesian Tree Sorting.cpp" />
+    <ClCompile Include="Searching\Binary Search.cpp" />
+    <ClCompile Include="Searching\Jump Search.cpp" />
     <ClCompile Include="Searching\Linear Search.cpp" />
+    <ClCompile Include="Sorting\!Cartesian Tree Sorting.cpp" />
     <ClCompile Include="Sorting\Binary Insertion Sort.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
@@ -92,11 +94,11 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="Sorting\Structure Sorting.cpp" />
+    <ClCompile Include="Sorting\Tag Sort.cpp" />
     <ClCompile Include="Sorting\Tim Sort.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="Tag Sort.cpp" />
-    <ClCompile Include="Tree Sort.cpp" />
+    <ClCompile Include="Sorting\Tree Sort.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

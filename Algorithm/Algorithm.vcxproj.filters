@@ -99,17 +99,23 @@
     <ClCompile Include="Sorting\Stooge Sort.cpp">
       <Filter>소스 파일\Sorting</Filter>
     </ClCompile>
-    <ClCompile Include="Tree Sort.cpp">
-      <Filter>소스 파일\Sorting</Filter>
-    </ClCompile>
-    <ClCompile Include="Tag Sort.cpp">
-      <Filter>소스 파일\Sorting</Filter>
-    </ClCompile>
-    <ClCompile Include="Cartesian Tree Sorting.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="Searching\Linear Search.cpp">
       <Filter>소스 파일\Searching</Filter>
+    </ClCompile>
+    <ClCompile Include="Searching\Binary Search.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Sorting\!Cartesian Tree Sorting.cpp">
+      <Filter>소스 파일\Sorting</Filter>
+    </ClCompile>
+    <ClCompile Include="Sorting\Tag Sort.cpp">
+      <Filter>소스 파일\Sorting</Filter>
+    </ClCompile>
+    <ClCompile Include="Sorting\Tree Sort.cpp">
+      <Filter>소스 파일\Sorting</Filter>
+    </ClCompile>
+    <ClCompile Include="Searching\Jump Search.cpp">
+      <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
