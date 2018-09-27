@@ -19,6 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Graph\Introduction, DFS and BFS\Breadth First Search or BFS for a Graph.cpp" />
+    <ClCompile Include="Graph\Introduction, DFS and BFS\Graph and its representations.cpp" />
     <ClCompile Include="Searching\Binary Search.cpp" />
     <ClCompile Include="Searching\Jump Search.cpp" />
     <ClCompile Include="Searching\Linear Search.cpp" />
@@ -105,7 +107,7 @@
     <ProjectGuid>{EF1DF981-50B0-4A79-8A28-DB52588E1EE8}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>Algorithm</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
