@@ -129,5 +129,13 @@
     <ClCompile Include="Graph\Introduction, DFS and BFS\Breadth First Search or BFS for a Graph.cpp">
       <Filter>소스 파일\Graph\Introduction, DFS and BFS</Filter>
     </ClCompile>
+    <ClCompile Include="Graph\Introduction, DFS and BFS\Depth First Search or DFS for a Graph.cpp">
+      <Filter>소스 파일\Graph\Introduction, DFS and BFS</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Applications of Depth First Search.txt">
+      <Filter>소스 파일\Graph\Introduction, DFS and BFS</Filter>
+    </Text>
   </ItemGroup>
 </Project>
