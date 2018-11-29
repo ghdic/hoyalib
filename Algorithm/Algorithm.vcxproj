@@ -105,6 +105,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="Applications of Depth First Search.txt" />
+    <Text Include="Graph\Introduction, DFS and BFS\Applications of Breadth First Traversal.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

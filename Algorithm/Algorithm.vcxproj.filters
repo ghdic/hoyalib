@@ -137,6 +137,9 @@
     <Text Include="Applications of Depth First Search.txt">
       <Filter>소스 파일\Graph\Introduction, DFS and BFS</Filter>
     </Text>
+    <Text Include="Graph\Introduction, DFS and BFS\Applications of Breadth First Traversal.txt">
+      <Filter>소스 파일\Graph\Introduction, DFS and BFS</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Applications of Depth First Search.txt">
