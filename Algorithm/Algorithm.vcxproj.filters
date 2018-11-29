@@ -19,6 +19,12 @@
     <Filter Include="소스 파일\Searching">
       <UniqueIdentifier>{fdd6b4b3-659a-4bb5-a5ea-10e1ef1325b1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Graph">
+      <UniqueIdentifier>{b9a52e6e-ec1d-494d-9174-80a4035ce704}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Graph\Introduction, DFS and BFS">
+      <UniqueIdentifier>{2c110fa9-9b98-453f-b6c0-a0502eaa263c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sorting\Selection Sort.c">
@@ -115,7 +121,12 @@
       <Filter>소스 파일\Searching</Filter>
     </ClCompile>
     <ClCompile Include="Searching\Jump Search.cpp">
-      <Filter>소스 파일\Searching</Filter>
+      <Filter>소스 파일</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Applications of Depth First Search.txt">
+      <Filter>소스 파일\Graph\Introduction, DFS and BFS</Filter>
+    </Text>
   </ItemGroup>
 </Project>
